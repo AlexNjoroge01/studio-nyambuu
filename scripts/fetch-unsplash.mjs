@@ -8,7 +8,7 @@
  * If a download fails it is retried once; IDs that still fail are reported so the
  * files can be fetched manually from https://unsplash.com/photos/<ID>.
  */
-import { createWriteStream, existsSync, mkdirSync } from "node:fs";
+import { existsSync, mkdirSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 

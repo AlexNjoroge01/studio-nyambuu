@@ -5,8 +5,20 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-    --font-heading: var(--font-sans);
-    --font-sans: var(--font-sans);
+    --font-heading: var(--font-cormorant);
+    --font-display: var(--font-cormorant);
+    --font-sans: var(--font-jost);
+
+    /* Blueprint §5.2 colour tokens */
+    --color-paper: var(--paper);
+    --color-cream: var(--cream);
+    --color-ink: var(--ink);
+    --color-cocoa: var(--cocoa);
+    --color-sun: var(--sun);
+    --color-cobalt: var(--cobalt);
+    --color-tangerine: var(--tangerine);
+    --color-vermilion: var(--vermilion);
+
     --color-sidebar-ring: var(--sidebar-ring);
     --color-sidebar-border: var(--sidebar-border);
     --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -48,72 +60,86 @@
 }
 
 :root {
-    --background: oklch(1 0 0);
-    --foreground: oklch(0.145 0 0);
-    --card: oklch(1 0 0);
-    --card-foreground: oklch(0.145 0 0);
-    --popover: oklch(1 0 0);
-    --popover-foreground: oklch(0.145 0 0);
-    --primary: oklch(0.205 0 0);
-    --primary-foreground: oklch(0.985 0 0);
-    --secondary: oklch(0.97 0 0);
-    --secondary-foreground: oklch(0.205 0 0);
-    --muted: oklch(0.97 0 0);
-    --muted-foreground: oklch(0.556 0 0);
-    --accent: oklch(0.97 0 0);
-    --accent-foreground: oklch(0.205 0 0);
-    --destructive: oklch(0.577 0.245 27.325);
-    --border: oklch(0.922 0 0);
-    --input: oklch(0.922 0 0);
-    --ring: oklch(0.708 0 0);
-    --chart-1: oklch(0.87 0 0);
-    --chart-2: oklch(0.556 0 0);
-    --chart-3: oklch(0.439 0 0);
-    --chart-4: oklch(0.371 0 0);
-    --chart-5: oklch(0.269 0 0);
+    color-scheme: light;
+
+    /* Blueprint §5.2 palette */
+    --paper: #ffffff;
+    --cream: #fff8ee;
+    --ink: #17110d;
+    --cocoa: #5b3a29;
+    --sun: #ffc800;
+    --cobalt: #1f3bff;
+    --tangerine: #ff7a1a;
+    --vermilion: #f0301e;
+
+    /* shadcn mapping — --primary: ink, --accent: sun, --ring: cobalt (§5.2) */
+    --background: var(--paper);
+    --foreground: var(--ink);
+    --card: var(--paper);
+    --card-foreground: var(--ink);
+    --popover: var(--paper);
+    --popover-foreground: var(--ink);
+    --primary: var(--ink);
+    --primary-foreground: var(--paper);
+    --secondary: var(--cream);
+    --secondary-foreground: var(--ink);
+    --muted: var(--cream);
+    --muted-foreground: var(--cocoa);
+    --accent: var(--sun);
+    --accent-foreground: var(--ink);
+    --destructive: var(--vermilion);
+    --border: rgba(23, 17, 13, 0.12); /* hairline: ink at 12% (§5.4) */
+    --input: rgba(23, 17, 13, 0.12);
+    --ring: var(--cobalt);
+    --chart-1: var(--cobalt);
+    --chart-2: var(--sun);
+    --chart-3: var(--tangerine);
+    --chart-4: var(--vermilion);
+    --chart-5: var(--cocoa);
     --radius: 0.625rem;
-    --sidebar: oklch(0.985 0 0);
-    --sidebar-foreground: oklch(0.145 0 0);
-    --sidebar-primary: oklch(0.205 0 0);
-    --sidebar-primary-foreground: oklch(0.985 0 0);
-    --sidebar-accent: oklch(0.97 0 0);
-    --sidebar-accent-foreground: oklch(0.205 0 0);
-    --sidebar-border: oklch(0.922 0 0);
-    --sidebar-ring: oklch(0.708 0 0);
+    --sidebar: var(--paper);
+    --sidebar-foreground: var(--ink);
+    --sidebar-primary: var(--ink);
+    --sidebar-primary-foreground: var(--paper);
+    --sidebar-accent: var(--cream);
+    --sidebar-accent-foreground: var(--ink);
+    --sidebar-border: var(--border);
+    --sidebar-ring: var(--cobalt);
 }
 
 .dark {
-    --background: oklch(0.145 0 0);
-    --foreground: oklch(0.985 0 0);
-    --card: oklch(0.205 0 0);
-    --card-foreground: oklch(0.985 0 0);
-    --popover: oklch(0.205 0 0);
-    --popover-foreground: oklch(0.985 0 0);
-    --primary: oklch(0.922 0 0);
-    --primary-foreground: oklch(0.205 0 0);
-    --secondary: oklch(0.269 0 0);
-    --secondary-foreground: oklch(0.985 0 0);
-    --muted: oklch(0.269 0 0);
-    --muted-foreground: oklch(0.708 0 0);
-    --accent: oklch(0.269 0 0);
-    --accent-foreground: oklch(0.985 0 0);
-    --destructive: oklch(0.704 0.191 22.216);
-    --border: oklch(1 0 0 / 10%);
-    --input: oklch(1 0 0 / 15%);
-    --ring: oklch(0.556 0 0);
-    --chart-1: oklch(0.87 0 0);
-    --chart-2: oklch(0.556 0 0);
-    --chart-3: oklch(0.439 0 0);
-    --chart-4: oklch(0.371 0 0);
-    --chart-5: oklch(0.269 0 0);
-    --sidebar: oklch(0.205 0 0);
-    --sidebar-foreground: oklch(0.985 0 0);
-    --sidebar-primary: oklch(0.488 0.243 264.376);
-    --sidebar-primary-foreground: oklch(0.985 0 0);
-    --sidebar-accent: oklch(0.269 0 0);
-    --sidebar-accent-foreground: oklch(0.985 0 0);
-    --sidebar-border: oklch(1 0 0 / 10%);
-    --sidebar-ring: oklch(0.556 0 0);
+    /* Dark mode is intentionally not themed (§13): the site stays light. */
+    --background: var(--paper);
+    --foreground: var(--ink);
+    --card: var(--paper);
+    --card-foreground: var(--ink);
+    --popover: var(--paper);
+    --popover-foreground: var(--ink);
+    --primary: var(--ink);
+    --primary-foreground: var(--paper);
+    --secondary: var(--cream);
+    --secondary-foreground: var(--ink);
+    --muted: var(--cream);
+    --muted-foreground: var(--cocoa);
+    --accent: var(--sun);
+    --accent-foreground: var(--ink);
+    --destructive: var(--vermilion);
+    --border: rgba(23, 17, 13, 0.12);
+    --input: rgba(23, 17, 13, 0.12);
+    --ring: var(--cobalt);
+    --chart-1: var(--cobalt);
+    --chart-2: var(--sun);
+    --chart-3: var(--tangerine);
+    --chart-4: var(--vermilion);
+    --chart-5: var(--cocoa);
+    --sidebar: var(--paper);
+    --sidebar-foreground: var(--ink);
+    --sidebar-primary: var(--ink);
+    --sidebar-primary-foreground: var(--paper);
+    --sidebar-accent: var(--cream);
+    --sidebar-accent-foreground: var(--ink);
+    --sidebar-border: var(--border);
+    --sidebar-ring: var(--cobalt);
 }
 
 @layer base {
@@ -125,5 +151,163 @@
     }
   html {
     @apply font-sans;
+    scroll-behavior: smooth;
     }
+  h1, h2, h3, h4 {
+    @apply font-heading text-balance;
+    }
+  ::selection {
+    background: var(--sun);
+    color: var(--ink);
+    }
+}
+
+/* Blueprint §5.3 — tiny uppercase labels: Jost 400, uppercase, 0.22em tracking */
+.label {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: 11px;
+}
+
+@media (min-width: 768px) {
+  .label { font-size: 12px; }
+}
+
+/* Outlined big numbers (§5.3) */
+.outline-number {
+  font-family: var(--font-display);
+  font-weight: 300;
+  -webkit-text-stroke: 1.5px rgba(23, 17, 13, 0.4);
+  color: transparent;
+}
+
+/* Hand-drawn cobalt underline for highlighted phrases (§5.1) */
+.underline-cobalt {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 10' preserveAspectRatio='none'%3E%3Cpath d='M2 7 Q 30 2 60 6 T 118 4' fill='none' stroke='%231F3BFF' stroke-width='3.5' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 100% 0.35em;
+  padding-bottom: 0.18em;
+}
+
+/* Wavy sun underline (§5.4 signature shape) */
+.underline-wavy-sun {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: var(--sun);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 8px;
+}
+
+/* Marquee track — transform-loop animation; pauses on hover; stops under reduced motion (§5.5) */
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.marquee-track {
+  animation: marquee-scroll 28s linear infinite;
+}
+.marquee-track:hover,
+.marquee-track:focus-within {
+  animation-play-state: paused;
+}
+
+/* Rotating sticker text (§5.4 signature shape) */
+@keyframes spin-slow {
+  to { transform: rotate(360deg); }
+}
+.sticker-spin {
+  animation: spin-slow 18s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .marquee-track { animation: none; }
+  .sticker-spin { animation: none; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Thin, long type defaults (§5.3): Jost body at full ink, generous line height */
+body {
+  font-weight: 300;
+  line-height: 1.65;
+  text-pretty: true;
+}
+
+/* Focus visibility: cobalt ring with 2px offset (§13) */
+:focus-visible {
+  outline: 2px solid var(--cobalt);
+  outline-offset: 2px;
+}
+
+/* ------------------------------------------------------------------ */
+/* Layout helpers (§5.4)                                              */
+/* ------------------------------------------------------------------ */
+.container-page {
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: clamp(20px, 6vw, 96px);
+}
+
+.section-y {
+  padding-block: 6rem;
+}
+
+@media (min-width: 768px) {
+  .section-y {
+    padding-block: 10rem;
+  }
+}
+
+/* Arched-top image frame — signature shape (§5.4) */
+.arch-frame {
+  border-radius: 999px 999px 0 0;
+}
+
+/* Big outlined numbers (§5.3) */
+.outline-number {
+  font-family: var(--font-cormorant);
+  font-weight: 300;
+  -webkit-text-stroke: 1.5px rgba(23, 17, 13, 0.42);
+  color: transparent;
+}
+
+/* Animated thin underline for nav links (§5.5) */
+.link-underline {
+  position: relative;
+  text-decoration: none;
+}
+.link-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.link-underline:hover::after,
+.link-underline:focus-visible::after {
+  transform: scaleX(1);
+}
+
+/* Thin hairline rule, ink at 12% (§5.4) */
+.hairline {
+  border-color: rgba(23, 17, 13, 0.12);
+}
+
+/* Sun colour-break band text selection safety */
+::selection {
+  background: var(--sun);
+  color: var(--ink);
 }
