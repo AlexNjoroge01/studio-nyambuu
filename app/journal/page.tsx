@@ -58,7 +58,7 @@ export default function JournalPage() {
                   <Badge variant="secondary" className="label font-normal text-cocoa">
                     {feature.category}
                   </Badge>
-                  <span className="label text-cocoa/70">{feature.readTime}</span>
+                  <span className="label text-cocoa/80">{feature.readTime}</span>
                 </div>
                 <h2 className="mt-4 max-w-[16ch] font-heading text-[clamp(2.2rem,4.4vw,3.8rem)] leading-[0.98] font-light tracking-[-0.02em] text-ink group-hover:text-cobalt">
                   {feature.title}
@@ -88,7 +88,7 @@ export default function JournalPage() {
                   <Badge variant="secondary" className="label font-normal text-cocoa">
                     {post.category}
                   </Badge>
-                  <span className="label text-cocoa/70">{post.readTime}</span>
+                  <span className="label text-cocoa/80">{post.readTime}</span>
                 </div>
                 <h2 className="mt-3 font-heading text-2xl leading-tight font-light text-ink group-hover:text-cobalt md:text-3xl">
                   {post.title}

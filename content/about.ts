@@ -46,6 +46,4 @@ export const aboutContent = {
     title: { lead: "Let's build a wardrobe that feels like", emphasis: "you." },
     body: "Start with a conversation about what you own, what you want and what is coming up.",
   },
-  ownerPhotoTodo:
-    "TODO(client): add a real photograph of Nyambura at /public/images/owner.jpg — the OwnerPhoto slot swaps it in automatically.",
 };

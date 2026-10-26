@@ -129,7 +129,7 @@ export default function ServicesPage() {
                 </ul>
 
                 <p className="mt-5 text-sm text-cocoa">
-                  <span className="label mr-2 text-cocoa/70">For you if</span>
+                  <span className="label mr-2 text-cocoa/80">For you if</span>
                   {service.personas[0]}
                 </p>
 

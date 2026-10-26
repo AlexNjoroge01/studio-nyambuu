@@ -112,7 +112,7 @@ export default function ContactPage() {
                   {contactContent.responseNote}
                 </p>
 
-                <p className="mt-6 text-xs text-cocoa/60">
+                <p className="mt-6 text-xs text-cocoa/80">
                   Prefer to read first?{" "}
                   <Link href="/how-it-works" className="underline underline-offset-2 hover:text-cobalt">
                     See how it works

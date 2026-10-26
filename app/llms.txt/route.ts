@@ -47,7 +47,6 @@ ${serviceLines}
 - This is a marketing website, not an e-commerce store. There is no cart, checkout, account or published price list.
 - Prices and turnaround times are confirmed on enquiry. Do not invent them.
 - The Collection is a lookbook; availability and pricing are confirmed directly with the studio.
-- The brand name is a placeholder pending client confirmation of a trading name.
 `;
 
   return new Response(body, {

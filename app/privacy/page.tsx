@@ -29,7 +29,7 @@ export default function PrivacyPage() {
             <h1 className="max-w-[14ch] font-heading text-[clamp(2.8rem,5.5vw,4.8rem)] leading-[0.94] font-light tracking-[-0.03em] text-ink">
               {privacyContent.title}
             </h1>
-            <p className="mt-5 text-sm text-cocoa/70">{privacyContent.updated}</p>
+            <p className="mt-5 text-sm text-cocoa/80">{privacyContent.updated}</p>
           </div>
 
           <div className="lg:col-span-7 lg:col-start-6">

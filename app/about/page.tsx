@@ -55,7 +55,7 @@ export default function AboutPage() {
 
           <Reveal delay={0.15} className="lg:col-span-4 lg:col-start-9">
             <OwnerPhoto className="aspect-[3/4]" />
-            <p className="label mt-3 text-cocoa/70">Nyambura Mbugua · Nairobi</p>
+            <p className="label mt-3 text-cocoa/80">Nyambura Mbugua · Nairobi</p>
           </Reveal>
         </div>
       </section>

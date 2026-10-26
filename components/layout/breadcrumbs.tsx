@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 
@@ -28,24 +29,26 @@ export function Breadcrumbs({
           {items.map((item, index) => {
             const isLast = index === items.length - 1;
             return (
-              <BreadcrumbItem key={item.href}>
-                {isLast ? (
-                  <BreadcrumbPage className="label tracking-[0.12em] text-ink">
-                    {item.name}
-                  </BreadcrumbPage>
-                ) : (
-                  <>
+              <Fragment key={item.href}>
+                <BreadcrumbItem>
+                  {isLast ? (
+                    <BreadcrumbPage className="label tracking-[0.12em] text-ink">
+                      {item.name}
+                    </BreadcrumbPage>
+                  ) : (
                     <BreadcrumbLink asChild>
                       <Link href={item.href} className="transition-colors hover:text-cobalt">
                         {item.name}
                       </Link>
                     </BreadcrumbLink>
-                    <BreadcrumbSeparator className="text-cocoa/60">
-                      <ChevronRight className="size-3" />
-                    </BreadcrumbSeparator>
-                  </>
+                  )}
+                </BreadcrumbItem>
+                {!isLast && (
+                  <BreadcrumbSeparator className="text-cocoa/60">
+                    <ChevronRight className="size-3" />
+                  </BreadcrumbSeparator>
                 )}
-              </BreadcrumbItem>
+              </Fragment>
             );
           })}
         </BreadcrumbList>

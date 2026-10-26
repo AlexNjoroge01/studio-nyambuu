@@ -39,7 +39,7 @@ import {
 import { cn } from "@/lib/utils";
 
 const fieldClass =
-  "h-11 rounded-none border-0 border-b border-border bg-transparent px-0 text-base text-ink shadow-none placeholder:text-cocoa/50 focus-visible:border-ink focus-visible:ring-0 aria-[invalid=true]:border-vermilion";
+  "h-11 rounded-none border-0 border-b border-border bg-transparent px-0 text-base text-ink shadow-none placeholder:text-cocoa/80 focus-visible:border-ink focus-visible:ring-0 aria-[invalid=true]:border-vermilion";
 
 const labelClass = "label text-cocoa";
 
@@ -221,7 +221,7 @@ export function ContactForm() {
                     className={cn(
                       fieldClass,
                       "flex w-full items-center justify-between text-left",
-                      !field.value && "text-cocoa/50"
+                      !field.value && "text-cocoa/80"
                     )}
                   >
                     {field.value || "Pick a date"}
@@ -345,7 +345,7 @@ export function ContactForm() {
         <Check className="size-4" aria-hidden />
       </Button>
 
-      <p className="text-xs leading-relaxed text-cocoa/70">
+      <p className="text-xs leading-relaxed text-cocoa/80">
         Your details are used only to reply to this enquiry. Nothing is stored on
         this website. See our <a href="/privacy" className="underline underline-offset-2">privacy note</a>.
       </p>

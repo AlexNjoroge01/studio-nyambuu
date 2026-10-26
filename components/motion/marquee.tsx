@@ -23,6 +23,7 @@ export function Marquee({
             key={index}
             className="flex shrink-0 items-center"
             aria-hidden={index > 0}
+            inert={index > 0}
           >
             {children}
           </div>

@@ -6,8 +6,11 @@ import { Lightbox, type LightboxItem } from "@/components/media/lightbox";
 import { SiteImage } from "@/components/media/site-image";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { allImages, type ImageKey } from "@/lib/image-manifest";
+import { collection } from "@/content/collection";
 import { lookbookContent } from "@/content/lookbook";
 import { cn } from "@/lib/utils";
+
+const collectionIdByImage = new Map(collection.map((item) => [item.image, item.id]));
 
 const OCCASION_TAGS = new Set([
   "party",
@@ -42,7 +45,7 @@ export function LookbookGallery() {
         key: image.key,
         caption: image.alt,
         tags: image.tags,
-        href: "/contact?piece=" + image.key,
+        href: "/contact?piece=" + (collectionIdByImage.get(image.key) ?? image.key),
       })),
     [items]
   );

@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "type": "module",
   "private": true,
+  "engines": {
+    "node": ">=20.9.0"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -11,7 +14,6 @@
     "format": "prettier --write \"**/*.{ts,tsx}\"",
     "optimize:images": "node scripts/optimize-images.mjs",
     "typecheck": "tsc --noEmit",
-    "optimize:images": "node scripts/optimize-images.mjs",
     "fetch:unsplash": "node scripts/fetch-unsplash.mjs"
   },
   "dependencies": {
@@ -31,7 +33,6 @@
     "input-otp": "^1.5.0",
     "lucide-react": "^1.61.0",
     "next": "16.4.2",
-    "next-themes": "^0.4.6",
     "radix-ui": "^1.8.1",
     "react": "19.3.1",
     "react-day-picker": "^10.0.2",

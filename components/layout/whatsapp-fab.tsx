@@ -11,15 +11,17 @@ export function WhatsAppFab() {
   if (pathname === "/contact") return null;
 
   return (
-    <a
-      href={whatsappUrl(`Hi ${site.brand.short}, I'd like to chat about styling.`)}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="fixed right-4 bottom-4 z-40 flex items-center gap-2 rounded-full bg-ink px-5 py-3.5 text-sm font-light text-paper shadow-xl transition-transform hover:-translate-y-0.5 md:hidden"
-      aria-label="Chat with Nyambura on WhatsApp"
-    >
-      <MessageCircle className="size-4" aria-hidden />
-      WhatsApp
-    </a>
+    <aside aria-label="Quick contact" className="md:hidden">
+      <a
+        href={whatsappUrl(`Hi ${site.brand.short}, I'd like to chat about styling.`)}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed right-4 bottom-4 z-40 flex items-center gap-2 rounded-full bg-ink px-5 py-3.5 text-sm font-light text-paper shadow-xl transition-transform hover:-translate-y-0.5"
+        aria-label="Chat with Nyambura on WhatsApp"
+      >
+        <MessageCircle className="size-4" aria-hidden />
+        WhatsApp
+      </a>
+    </aside>
   );
 }

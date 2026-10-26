@@ -34,7 +34,7 @@ export function OwnerPhoto({ className }: { className?: string }) {
           <span className="font-heading text-6xl font-light italic text-cocoa/60">
             NM
           </span>
-          <span className="label text-cocoa/70">The studio</span>
+          <span className="label text-cocoa/80">The studio</span>
           <p className="max-w-[22ch] font-heading text-xl leading-tight text-cocoa">
             A portrait of Nyambura will live here.
           </p>

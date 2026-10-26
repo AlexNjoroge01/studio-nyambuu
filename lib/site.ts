@@ -12,7 +12,17 @@ export const site = {
     wordmark: "Nyambura Mbugua",
     promise: "Dressing well, made simpler and more intentional.",
   },
-  url: (process.env.NEXT_PUBLIC_SITE_URL ?? "https://nyamburambugua.vercel.app").replace(/\/$/, ""),
+  /**
+   * Canonical origin. Prefer NEXT_PUBLIC_SITE_URL; on Vercel fall back to the
+   * production deployment host so previews and first deploys still emit
+   * correct canonicals, OG URLs and sitemap entries.
+   */
+  url: (
+    process.env.NEXT_PUBLIC_SITE_URL ??
+    (process.env.VERCEL_PROJECT_PRODUCTION_URL
+      ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+      : "https://nyamburambugua.vercel.app")
+  ).replace(/\/$/, ""),
   description:
     "Nyambura Mbugua is a Nairobi-based personal stylist and fashion boutique offering wardrobe editing, personal shopping, event styling and express outfit sourcing for women across Kenya.",
   established: "2025-10-25",

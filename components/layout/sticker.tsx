@@ -15,9 +15,7 @@ export function Sticker({
   const ring = `${label} • ${label} • `;
 
   return (
-    <Link
-      href={href}
-      aria-label={label}
+    <div
       className={cn(
         "group relative flex size-28 items-center justify-center rounded-full bg-sun text-ink shadow-lg transition-transform hover:scale-105 md:size-32",
         className
@@ -38,7 +36,13 @@ export function Sticker({
           <textPath href="#sticker-circle">{ring}</textPath>
         </text>
       </svg>
-      <span className="font-heading text-2xl leading-none italic">Book</span>
-    </Link>
+      <Link
+        href={href}
+        aria-label={label}
+        className="absolute inset-0 flex items-center justify-center rounded-full"
+      >
+        <span className="font-heading text-2xl leading-none italic">Book</span>
+      </Link>
+    </div>
   );
 }

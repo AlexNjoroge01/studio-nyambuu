@@ -95,7 +95,7 @@ export default async function JournalArticlePage({ params }: ArticleRouteProps) 
               <Badge variant="secondary" className="label font-normal text-cocoa">
                 {post.category}
               </Badge>
-              <span className="label text-cocoa/70">{post.readTime}</span>
+              <span className="label text-cocoa/80">{post.readTime}</span>
             </div>
             <h1 className="mt-5 font-heading text-[clamp(2.6rem,6.5vw,5.6rem)] leading-[0.94] font-light tracking-[-0.03em] text-ink">
               {post.title}

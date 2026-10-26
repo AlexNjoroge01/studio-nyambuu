@@ -8,7 +8,6 @@ import { Header } from "@/components/layout/header";
 import { ScrollProgress } from "@/components/layout/scroll-progress";
 import { WhatsAppFab } from "@/components/layout/whatsapp-fab";
 import { JsonLd } from "@/components/seo/json-ld";
-import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { organizationSchema } from "@/lib/schema";
@@ -103,31 +102,23 @@ export default function RootLayout({
       className={cn(cormorant.variable, jost.variable, "antialiased")}
     >
       <body className="min-h-svh bg-paper text-ink">
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="light"
-          forcedTheme="light"
-          enableSystem={false}
-          disableTransitionOnChange
-        >
-          <TooltipProvider delayDuration={200}>
-            <a
-              href="#main"
-              className="sr-only z-[100] rounded-full bg-ink px-5 py-3 text-sm text-paper focus:not-sr-only focus:fixed focus:top-3 focus:left-3"
-            >
-              Skip to content
-            </a>
-            <ScrollProgress />
-            <CustomCursor />
-            <Header />
-            <main id="main" className="min-h-svh pt-[72px] md:pt-20">
-              {children}
-            </main>
-            <Footer />
-            <WhatsAppFab />
-            <Toaster position="bottom-center" richColors closeButton />
-          </TooltipProvider>
-        </ThemeProvider>
+        <TooltipProvider delayDuration={200}>
+          <a
+            href="#main"
+            className="sr-only z-[100] rounded-full bg-ink px-5 py-3 text-sm text-paper focus:not-sr-only focus:fixed focus:top-3 focus:left-3"
+          >
+            Skip to content
+          </a>
+          <ScrollProgress />
+          <CustomCursor />
+          <Header />
+          <main id="main" className="min-h-svh pt-[72px] md:pt-20">
+            {children}
+          </main>
+          <Footer />
+          <WhatsAppFab />
+          <Toaster position="bottom-center" richColors closeButton />
+        </TooltipProvider>
         <JsonLd data={organizationSchema()} />
       </body>
     </html>
