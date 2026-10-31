@@ -105,7 +105,7 @@ export default async function JournalArticlePage({ params }: ArticleRouteProps) 
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-x-4 gap-y-2 border-t border-border pt-5">
               <p className="text-sm text-ink">
-                By <span className="font-normal">Nyambura Mbugua</span>
+                By <span className="font-normal">Styled by Nyambura</span>
               </p>
               <span className="text-cocoa/40" aria-hidden>
                 ·

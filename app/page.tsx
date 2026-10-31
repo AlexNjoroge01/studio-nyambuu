@@ -18,7 +18,7 @@ import { homeContent } from "@/content/home";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Nyambura Mbugua — Personal Stylist in Nairobi",
+  title: "Styled by Nyambura — Personal Stylist in Nairobi",
   description:
     "Personal styling, wardrobe editing, personal shopping and event outfits for women in Nairobi and across Kenya. Dress with intention — book a styling session.",
   path: "/",

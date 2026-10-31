@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 
 import { getPost } from "@/content/journal";
 
-export const alt = "Journal article — Nyambura Mbugua";
+export const alt = "Journal article — Styled by Nyambura";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -66,7 +66,7 @@ export default async function JournalOpengraphImage({
         </div>
 
         <div style={{ display: "flex", fontSize: 26, color: "#17110D" }}>
-          Nyambura Mbugua · Nairobi
+          Styled by Nyambura · Nairobi
         </div>
       </div>
     ),

@@ -4,12 +4,12 @@
  */
 
 export const site = {
-  name: "Nyambura Mbugua",
+  name: "Styled by Nyambura",
   /** TODO(client): confirm trading name before launch (Blueprint §1) */
   brand: {
-    name: "Nyambura Mbugua",
+    name: "Styled by Nyambura",
     short: "Nyambura",
-    wordmark: "Nyambura Mbugua",
+    wordmark: "Styled by Nyambura",
     promise: "Dressing well, made simpler and more intentional.",
   },
   /**
@@ -24,7 +24,7 @@ export const site = {
       : "https://nyamburambugua.vercel.app")
   ).replace(/\/$/, ""),
   description:
-    "Nyambura Mbugua is a Nairobi-based personal stylist and fashion boutique offering wardrobe editing, personal shopping, event styling and express outfit sourcing for women across Kenya.",
+    "Styled by Nyambura is a Nairobi-based personal stylist and fashion boutique offering wardrobe editing, personal shopping, event styling and express outfit sourcing for women across Kenya.",
   established: "2025-10-25",
   location: {
     city: "Nairobi",

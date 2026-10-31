@@ -35,7 +35,7 @@ export async function sendEnquiryEmail(values: ContactValues) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        from: "Nyambura Mbugua Website <onboarding@resend.dev>",
+        from: "Styled by Nyambura Website <onboarding@resend.dev>",
         to: ["jmsnyambz@gmail.com"],
         subject: `Styling enquiry — ${data.name}`,
         html,

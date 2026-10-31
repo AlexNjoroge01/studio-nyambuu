@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 
 import { getService } from "@/content/services";
 
-export const alt = "Styling service — Nyambura Mbugua, Nairobi";
+export const alt = "Styling service — Styled by Nyambura, Nairobi";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -49,7 +49,7 @@ export default async function ServiceOpengraphImage({
           }}
         />
         <div style={{ display: "flex", fontSize: 24, letterSpacing: 6, color: "#5B3A29" }}>
-          NYAMBURA MBUGUA · NAIROBI
+          Styled by Nyambura · NAIROBI
         </div>
 
         <div style={{ display: "flex", flexDirection: "column" }}>

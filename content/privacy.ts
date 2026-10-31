@@ -4,7 +4,7 @@ export const privacyContent = {
   title: "Your details, handled with care.",
   updated: "Last updated: October 2026",
   intro:
-    "This website is a marketing site for Nyambura Mbugua, a personal styling and fashion studio in Nairobi, Kenya. It is not an online shop and it does not create accounts, take payments or store a database of visitors.",
+    "This website is a marketing site for Styled by Nyambura, a personal styling and fashion studio in Nairobi, Kenya. It is not an online shop and it does not create accounts, take payments or store a database of visitors.",
   sections: [
     {
       title: "What we collect",

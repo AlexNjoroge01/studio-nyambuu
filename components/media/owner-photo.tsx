@@ -23,7 +23,7 @@ export function OwnerPhoto({ className }: { className?: string }) {
       {hasOwnerPhoto ? (
         <Image
           src="/images/owner.jpg"
-          alt="Nyambura Mbugua, personal stylist and founder, in the studio"
+          alt="Styled by Nyambura, personal stylist and founder, in the studio"
           fill
           sizes="(min-width: 1024px) 40vw, 100vw"
           className="object-cover"

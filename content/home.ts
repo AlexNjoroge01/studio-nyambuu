@@ -19,7 +19,7 @@ export const homeContent = {
   intro: {
     eyebrow: "The studio",
     before:
-      "Nyambura Mbugua is a Nairobi-based personal stylist and fashion boutique helping women build wardrobes that work as hard as they do. Fewer pieces, better chosen. Outfits that feel like",
+      "Styled by Nyambura is a Nairobi-based personal stylist and fashion boutique helping women build wardrobes that work as hard as they do. Fewer pieces, better chosen. Outfits that feel like",
     highlight: "you",
     after:
       ", not a trend. From a full wardrobe edit to a complete look at short notice, the work is the same: dressing well, made simpler and more intentional.",
@@ -56,7 +56,7 @@ export const homeContent = {
   colourBreak: {
     image: "tangerine-ruffle-mini-dress-nairobi" as ImageKey,
     quote: "The right outfit does not change you. It lets you arrive.",
-    attribution: "Nyambura Mbugua",
+    attribution: "Styled by Nyambura",
     cta: "Start with a conversation",
   },
   principles: {

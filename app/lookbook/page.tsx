@@ -8,7 +8,7 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata: Metadata = buildMetadata({
   title: "Lookbook — Nairobi Style Gallery",
   description:
-    "A full-bleed lookbook of clothing, shoes and accessories from the Nyambura Mbugua studio in Nairobi. Filter by category or occasion and open any look.",
+    "A full-bleed lookbook of clothing, shoes and accessories from the Styled by Nyambura studio in Nairobi. Filter by category or occasion and open any look.",
   path: "/lookbook",
   keywords: [
     "Nairobi fashion lookbook",

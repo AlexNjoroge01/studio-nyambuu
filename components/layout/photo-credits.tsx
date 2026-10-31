@@ -55,7 +55,7 @@ export function PhotoCredits() {
           ))}
         </ul>
         <p className="text-xs text-cocoa">
-          Studio clothing photography © Nyambura Mbugua. All rights reserved.
+          Studio clothing photography © Styled by Nyambura. All rights reserved.
         </p>
       </DialogContent>
     </Dialog>

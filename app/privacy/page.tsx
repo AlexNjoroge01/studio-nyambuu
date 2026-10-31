@@ -7,7 +7,7 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata: Metadata = buildMetadata({
   title: "Privacy Note",
   description:
-    "How Nyambura Mbugua handles enquiry details: no accounts, no payments, no stored submissions. Your details are used only to reply to you.",
+    "How Styled by Nyambura handles enquiry details: no accounts, no payments, no stored submissions. Your details are used only to reply to you.",
   path: "/privacy",
   noIndex: false,
 });
